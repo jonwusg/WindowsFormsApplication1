@@ -15,12 +15,13 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            label1.Text = "Please Click the button!";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string s1 = dateTimePicker1.Value.Date.ToString();
-            string s2 = dateTimePicker1.Value.ToLongTimeString();
+            string s2 = dateTimePicker2.Value.ToLongTimeString();
 
             label1.Text = s1 + ", " + s2;
         }
